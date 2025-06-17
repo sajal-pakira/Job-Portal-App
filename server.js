@@ -4,7 +4,9 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
+//files import
 import connectDB from "./config/db.js";
+import authRoutes from "./routes/auth.route.js";
 
 //mongoDb connection
 connectDB();
@@ -18,9 +20,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 //routes
-app.get("/", (req, res) => {
-  res.send("<h1>welcome to my JOB PORTAL</h1>");
-});
+app.use("/api/v1/user", authRoutes);
 
 //listen
 const port = process.env.PORT || 8080;
