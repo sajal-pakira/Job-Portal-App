@@ -13,14 +13,18 @@ const errorMiddleware = (err, req, res, next) => {
   }
 
   //duplicate user error
-  if (err.code || err.code === 11000) {
-    (statusCode = 400),
-      (message = `${Object.keys(err.keyValue)} fiels has to be unique`);
+  if (err.code === 11000) {
+    statusCode = 400;
+    message = `${Object.keys(err.keyValue)} field(s) must be unique`;
   }
 
   res.status(statusCode).json({
     success: false,
-    message,
+    error: {
+      message,
+      type: err.name,
+      stack: process.env.DEV_MODE === "development" ? err.stack : undefined,
+    },
   });
 };
 
