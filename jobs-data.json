@@ -1,0 +1,542 @@
+[
+  {
+    "company": "Google",
+    "position": "Frontend Developer",
+    "status": "pending",
+    "workType": "full-time",
+    "jobType": "Remote",
+    "workLocation": "Bengaluru, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Microsoft",
+    "position": "Backend Engineer",
+    "status": "reject",
+    "workType": "part-time",
+    "jobType": "On-site",
+    "workLocation": "Hyderabad, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Amazon",
+    "position": "Cloud Solutions Architect",
+    "status": "interview",
+    "workType": "internship",
+    "jobType": "Hybrid",
+    "workLocation": "Delhi, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Flipkart",
+    "position": "UI UX Designer",
+    "status": "pending",
+    "workType": "freelance",
+    "jobType": "Remote",
+    "workLocation": "Mumbai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "TCS",
+    "position": "DevOps Engineer",
+    "status": "reject",
+    "workType": "full-time",
+    "jobType": "On-site",
+    "workLocation": "Pune, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Wipro",
+    "position": "Data Scientist",
+    "status": "interview",
+    "workType": "part-time",
+    "jobType": "Hybrid",
+    "workLocation": "Chennai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Infosys",
+    "position": "Machine Learning Engineer",
+    "status": "pending",
+    "workType": "internship",
+    "jobType": "Remote",
+    "workLocation": "Noida, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Zoho",
+    "position": "Technical Support Engineer",
+    "status": "reject",
+    "workType": "freelance",
+    "jobType": "On-site",
+    "workLocation": "Kolkata, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Freshworks",
+    "position": "Product Manager",
+    "status": "interview",
+    "workType": "full-time",
+    "jobType": "Hybrid",
+    "workLocation": "Salem, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Swiggy",
+    "position": "Data Analyst",
+    "status": "pending",
+    "workType": "part-time",
+    "jobType": "Remote",
+    "workLocation": "Chandigarh, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Zomato",
+    "position": "Business Analyst",
+    "status": "reject",
+    "workType": "internship",
+    "jobType": "On-site",
+    "workLocation": "Bengaluru, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Paytm",
+    "position": "Security Engineer",
+    "status": "interview",
+    "workType": "freelance",
+    "jobType": "Hybrid",
+    "workLocation": "Hyderabad, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Byju's",
+    "position": "Full Stack Developer",
+    "status": "pending",
+    "workType": "full-time",
+    "jobType": "Remote",
+    "workLocation": "Delhi, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Ola",
+    "position": "Android Developer",
+    "status": "reject",
+    "workType": "part-time",
+    "jobType": "On-site",
+    "workLocation": "Mumbai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Uber",
+    "position": "iOS Developer",
+    "status": "interview",
+    "workType": "internship",
+    "jobType": "Hybrid",
+    "workLocation": "Pune, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "LinkedIn",
+    "position": "SDE 1",
+    "status": "pending",
+    "workType": "freelance",
+    "jobType": "Remote",
+    "workLocation": "Chennai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Netflix",
+    "position": "SDE 2",
+    "status": "reject",
+    "workType": "full-time",
+    "jobType": "On-site",
+    "workLocation": "Noida, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Hotstar",
+    "position": "Automation Tester",
+    "status": "interview",
+    "workType": "part-time",
+    "jobType": "Hybrid",
+    "workLocation": "Kolkata, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Apple",
+    "position": "Software Engineer",
+    "status": "pending",
+    "workType": "internship",
+    "jobType": "Remote",
+    "workLocation": "Salem, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Samsung",
+    "position": "Embedded Developer",
+    "status": "reject",
+    "workType": "freelance",
+    "jobType": "On-site",
+    "workLocation": "Chandigarh, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "IBM",
+    "position": "System Administrator",
+    "status": "interview",
+    "workType": "full-time",
+    "jobType": "Hybrid",
+    "workLocation": "Bengaluru, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Intel",
+    "position": "Hardware Engineer",
+    "status": "pending",
+    "workType": "part-time",
+    "jobType": "Remote",
+    "workLocation": "Hyderabad, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Nvidia",
+    "position": "AI Researcher",
+    "status": "reject",
+    "workType": "internship",
+    "jobType": "On-site",
+    "workLocation": "Delhi, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Meta",
+    "position": "React Developer",
+    "status": "interview",
+    "workType": "freelance",
+    "jobType": "Hybrid",
+    "workLocation": "Mumbai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Accenture",
+    "position": "ETL Developer",
+    "status": "pending",
+    "workType": "full-time",
+    "jobType": "Remote",
+    "workLocation": "Pune, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Capgemini",
+    "position": "Software Tester",
+    "status": "reject",
+    "workType": "part-time",
+    "jobType": "On-site",
+    "workLocation": "Chennai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Deloitte",
+    "position": "Data Engineer",
+    "status": "interview",
+    "workType": "internship",
+    "jobType": "Hybrid",
+    "workLocation": "Noida, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "EY",
+    "position": "BI Analyst",
+    "status": "pending",
+    "workType": "freelance",
+    "jobType": "Remote",
+    "workLocation": "Kolkata, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Cognizant",
+    "position": "Junior Developer",
+    "status": "reject",
+    "workType": "full-time",
+    "jobType": "On-site",
+    "workLocation": "Salem, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Salesforce",
+    "position": "Project Coordinator",
+    "status": "interview",
+    "workType": "part-time",
+    "jobType": "Hybrid",
+    "workLocation": "Chandigarh, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Google",
+    "position": "Frontend Developer",
+    "status": "pending",
+    "workType": "internship",
+    "jobType": "Remote",
+    "workLocation": "Bengaluru, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Microsoft",
+    "position": "Backend Engineer",
+    "status": "reject",
+    "workType": "freelance",
+    "jobType": "On-site",
+    "workLocation": "Hyderabad, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Amazon",
+    "position": "Cloud Solutions Architect",
+    "status": "interview",
+    "workType": "full-time",
+    "jobType": "Hybrid",
+    "workLocation": "Delhi, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Flipkart",
+    "position": "UI UX Designer",
+    "status": "pending",
+    "workType": "part-time",
+    "jobType": "Remote",
+    "workLocation": "Mumbai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "TCS",
+    "position": "DevOps Engineer",
+    "status": "reject",
+    "workType": "internship",
+    "jobType": "On-site",
+    "workLocation": "Pune, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Wipro",
+    "position": "Data Scientist",
+    "status": "interview",
+    "workType": "freelance",
+    "jobType": "Hybrid",
+    "workLocation": "Chennai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Infosys",
+    "position": "Machine Learning Engineer",
+    "status": "pending",
+    "workType": "full-time",
+    "jobType": "Remote",
+    "workLocation": "Noida, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Zoho",
+    "position": "Technical Support Engineer",
+    "status": "reject",
+    "workType": "part-time",
+    "jobType": "On-site",
+    "workLocation": "Kolkata, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Freshworks",
+    "position": "Product Manager",
+    "status": "interview",
+    "workType": "internship",
+    "jobType": "Hybrid",
+    "workLocation": "Salem, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Swiggy",
+    "position": "Data Analyst",
+    "status": "pending",
+    "workType": "freelance",
+    "jobType": "Remote",
+    "workLocation": "Chandigarh, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Zomato",
+    "position": "Business Analyst",
+    "status": "reject",
+    "workType": "full-time",
+    "jobType": "On-site",
+    "workLocation": "Bengaluru, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Paytm",
+    "position": "Security Engineer",
+    "status": "interview",
+    "workType": "part-time",
+    "jobType": "Hybrid",
+    "workLocation": "Hyderabad, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Byju's",
+    "position": "Full Stack Developer",
+    "status": "pending",
+    "workType": "internship",
+    "jobType": "Remote",
+    "workLocation": "Delhi, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Ola",
+    "position": "Android Developer",
+    "status": "reject",
+    "workType": "freelance",
+    "jobType": "On-site",
+    "workLocation": "Mumbai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Uber",
+    "position": "iOS Developer",
+    "status": "interview",
+    "workType": "full-time",
+    "jobType": "Hybrid",
+    "workLocation": "Pune, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "LinkedIn",
+    "position": "SDE 1",
+    "status": "pending",
+    "workType": "part-time",
+    "jobType": "Remote",
+    "workLocation": "Chennai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Netflix",
+    "position": "SDE 2",
+    "status": "reject",
+    "workType": "internship",
+    "jobType": "On-site",
+    "workLocation": "Noida, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Hotstar",
+    "position": "Automation Tester",
+    "status": "interview",
+    "workType": "freelance",
+    "jobType": "Hybrid",
+    "workLocation": "Kolkata, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Apple",
+    "position": "Software Engineer",
+    "status": "pending",
+    "workType": "full-time",
+    "jobType": "Remote",
+    "workLocation": "Salem, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Samsung",
+    "position": "Embedded Developer",
+    "status": "reject",
+    "workType": "part-time",
+    "jobType": "On-site",
+    "workLocation": "Chandigarh, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "IBM",
+    "position": "System Administrator",
+    "status": "interview",
+    "workType": "internship",
+    "jobType": "Hybrid",
+    "workLocation": "Bengaluru, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Intel",
+    "position": "Hardware Engineer",
+    "status": "pending",
+    "workType": "freelance",
+    "jobType": "Remote",
+    "workLocation": "Hyderabad, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Nvidia",
+    "position": "AI Researcher",
+    "status": "reject",
+    "workType": "full-time",
+    "jobType": "On-site",
+    "workLocation": "Delhi, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Meta",
+    "position": "React Developer",
+    "status": "interview",
+    "workType": "part-time",
+    "jobType": "Hybrid",
+    "workLocation": "Mumbai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Accenture",
+    "position": "ETL Developer",
+    "status": "pending",
+    "workType": "internship",
+    "jobType": "Remote",
+    "workLocation": "Pune, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Capgemini",
+    "position": "Software Tester",
+    "status": "reject",
+    "workType": "freelance",
+    "jobType": "On-site",
+    "workLocation": "Chennai, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Deloitte",
+    "position": "Data Engineer",
+    "status": "interview",
+    "workType": "full-time",
+    "jobType": "Hybrid",
+    "workLocation": "Noida, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "EY",
+    "position": "BI Analyst",
+    "status": "pending",
+    "workType": "part-time",
+    "jobType": "Remote",
+    "workLocation": "Kolkata, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Cognizant",
+    "position": "Junior Developer",
+    "status": "reject",
+    "workType": "internship",
+    "jobType": "On-site",
+    "workLocation": "Salem, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  },
+  {
+    "company": "Salesforce",
+    "position": "Project Coordinator",
+    "status": "interview",
+    "workType": "freelance",
+    "jobType": "Hybrid",
+    "workLocation": "Chandigarh, India",
+    "createdBy": "6853c78d0c934d817b362d35"
+  }
+]
