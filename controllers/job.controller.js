@@ -1,4 +1,5 @@
 import jobModel from "../models/job.model.js";
+import mongoose from "mongoose";
 
 // create job
 export const createJobController = async (req, res, next) => {
@@ -84,5 +85,34 @@ export const deleteJobController = async (req, res, next) => {
   res.status(200).json({
     success: true,
     message: "Job deleted successfully",
+  });
+};
+
+//job stats & filter
+export const jobStatsController = async (req, res) => {
+  const stats = await jobModel.aggregate([
+    {
+      $match: {
+        createdBy: req.user.userId,
+      },
+    },
+    {
+      $group: {
+        _id: "$status",
+        count: { $sum: 1 },
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        status: "$_id",
+        count: 1,
+      },
+    },
+  ]);
+
+  res.status(200).json({
+    success: true,
+    stats,
   });
 };

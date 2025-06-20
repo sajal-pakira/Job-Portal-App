@@ -13,9 +13,10 @@ const jobSchema = mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["pending", "reject", "interview"],
+      enum: ["pending", "interview", "reject"],
       default: "pending",
     },
+
     workType: {
       type: String,
       enum: ["full-time", "part-time", "internship", "freelance"],
@@ -32,7 +33,7 @@ const jobSchema = mongoose.Schema(
       default: "Bengaluru, India",
     },
     createdBy: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId, //it is a string not a objectId
       ref: "User",
     },
   },
