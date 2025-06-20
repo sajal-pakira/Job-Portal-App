@@ -33,7 +33,12 @@ const jobSchema = mongoose.Schema(
       default: "Bengaluru, India",
     },
     createdBy: {
-      type: mongoose.Schema.Types.ObjectId, //it is a string not a objectId
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    appliedBy: {
+      type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
   },
