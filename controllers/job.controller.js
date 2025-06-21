@@ -26,6 +26,7 @@ export const getAllJobs = async (req, res, next) => {
     searchForPosition,
     searchForCompany,
     searchForWorkLocation,
+    sort,
   } = req.query;
   //conditions for searching filters
   const queryObject = {
@@ -53,8 +54,22 @@ export const getAllJobs = async (req, res, next) => {
   if (searchForWorkLocation) {
     queryObject.workLocation = { $regex: searchForWorkLocation, $options: "i" };
   }
-  const requiredJobs = await jobModel.find(queryObject);
-  // const jobs = await jobModel.find({ createdBy: req.user.userId });
+  let queryResult = jobModel.find(queryObject);
+  if (sort === "latest") {
+    queryResult = queryResult.sort("createdAt");
+  }
+  if (sort === "oldest") {
+    queryResult = queryResult.sort("-createdAt");
+  }
+  if (sort === "a-z") {
+    queryResult = queryResult.sort("position");
+  }
+  if (sort === "z-a") {
+    queryResult = queryResult.sort("-position");
+  }
+
+  const requiredJobs = await queryResult;
+  // let jobs = await jobModel.find({ createdBy: req.user.userId });
   if (!requiredJobs) {
     return next(new Error("No Jobs found"));
   }
