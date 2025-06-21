@@ -19,14 +19,49 @@ export const createJobController = async (req, res, next) => {
 
 // get all jobs
 export const getAllJobs = async (req, res, next) => {
-  const jobs = await jobModel.find({ createdBy: req.user.userId });
-  if (!jobs) {
-    return next(new Error("Jobs are not found"));
+  const {
+    status, //enum
+    workType, //enum
+    jobType, //enum
+    searchForPosition,
+    searchForCompany,
+    searchForWorkLocation,
+  } = req.query;
+  //conditions for searching filters
+  const queryObject = {
+    createdBy: req.user.userId,
+  };
+  //logic filters
+  if (status && status !== "all") {
+    queryObject.status = status;
+  }
+  if (workType && workType !== "all") {
+    queryObject.workType = workType;
+  }
+  if (jobType && jobType !== "all") {
+    queryObject.jobType = jobType;
+  }
+  //search on the basis of position
+  if (searchForPosition) {
+    queryObject.position = { $regex: searchForPosition, $options: "i" };
+  }
+  //search on the basis of Company
+  if (searchForCompany) {
+    queryObject.company = { $regex: searchForCompany, $options: "i" };
+  }
+  //search on the basis of WorkLocation
+  if (searchForWorkLocation) {
+    queryObject.workLocation = { $regex: searchForWorkLocation, $options: "i" };
+  }
+  const requiredJobs = await jobModel.find(queryObject);
+  // const jobs = await jobModel.find({ createdBy: req.user.userId });
+  if (!requiredJobs) {
+    return next(new Error("No Jobs found"));
   }
   res.status(200).json({
     success: true,
-    totalJobs: jobs.length,
-    jobs,
+    totalJobs: requiredJobs.length,
+    jobs: requiredJobs,
   });
 };
 
@@ -150,6 +185,20 @@ export const jobStatsController = async (req, res) => {
       $limit: 6, // last 6 months
     },
   ]);
+
+  monthlyApplication = monthlyApplication
+    .map((item) => {
+      const {
+        _id: { year, month },
+        count,
+      } = item;
+      const date = moment()
+        .month(month - 1)
+        .year(year)
+        .format("MMM Y");
+      return { date, count };
+    })
+    .reverse();
 
   res.status(200).json({
     success: true,
