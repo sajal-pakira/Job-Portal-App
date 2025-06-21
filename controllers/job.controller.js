@@ -30,7 +30,7 @@ export const getAllJobs = async (req, res, next) => {
   } = req.query;
   //conditions for searching filters
   const queryObject = {
-    createdBy: req.user.userId,
+    createdBy: req.user.userId, // default
   };
   //logic filters
   if (status && status !== "all") {
@@ -67,16 +67,23 @@ export const getAllJobs = async (req, res, next) => {
   if (sort === "z-a") {
     queryResult = queryResult.sort("-position");
   }
-
+  //pagination
+  const page = Number(req.query.page) || 1;
+  const limit = Number(req.query.limit) || 10;
+  const skip = (page - 1) * limit;
+  queryResult = queryResult.skip(skip).limit(limit);
+  // jobs count
+  const totalJobs = await jobModel.countDocuments(queryResult);
+  const noOfPage = Math.ceil(totalJobs / limit);
   const requiredJobs = await queryResult;
-  // let jobs = await jobModel.find({ createdBy: req.user.userId });
   if (!requiredJobs) {
     return next(new Error("No Jobs found"));
   }
   res.status(200).json({
     success: true,
-    totalJobs: requiredJobs.length,
+    totalJobs,
     jobs: requiredJobs,
+    number_of_pages: noOfPage,
   });
 };
 
