@@ -1,25 +1,29 @@
-# Job Portal Backend API
+# 🧑‍💻 Job Portal Backend
 
 This is a RESTful API backend for a **Job Portal Application**, built using **Node.js**, **Express.js**, **MongoDB**, and **Swagger** for API documentation. It allows users to register, log in, manage job listings, update profiles, and view application statistics.
 
-## Features
+## 🚀 Features
 
-- User registration and login with JWT authentication
-- Profile update with secure password handling
-- Create, Read, Update, Delete (CRUD) jobs
-- Filter and search job listings by position, company, or location
-- Monthly statistics and status-based breakdown for job applications
-- Swagger UI documentation at `/api-docs`
-- Input sanitization and security middlewares
+- 🔐 User Registration and Login with JWT Authentication
+- 📝 Create, Read, Update, and Delete Job Posts
+- 📊 Get Job Statistics (by status & monthly applications)
+- 👤 Update User Profile
+- 🧹 Input Sanitization and Error Handling
+- 🔒 Helmet, Mongo Sanitize for Security
+- 📄 Swagger API Documentation (`/api-docs`)
 
-## Tech Stack
+---
 
-- Node.js
-- Express.js
-- MongoDB (with Mongoose)
-- JWT (JSON Web Token)
-- Swagger for API documentation
-- Helmet, Mongo Sanitize, and CORS for security
+## 🛠️ Tech Stack
+
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB with Mongoose
+- **Authentication:** JWT
+- **Security:** Helmet, express-mongo-sanitize
+- **Documentation:** Swagger (OpenAPI 3.0)
+- **Others:** CORS, dotenv, morgan
+
+---
 
 ## Installation
 
@@ -48,14 +52,14 @@ This opens the Swagger UI interface where all routes are documented.
 ## Folder Structure
 
 ```
-├── config/
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── .env.example
-├── server.js
-├── package.json
+├── config/ # Swagger & DB config
+├── controllers/ # Business logic
+├── middlewares/ # Custom middleware (auth, error, sanitizer)
+├── models/ # Mongoose schemas
+├── routes/ # Express routes
+├── .env # Environment variables (ignored)
+├── server.js # Entry point
+└── package.json
 ```
 
 ## Author
@@ -65,5 +69,20 @@ This opens the Swagger UI interface where all routes are documented.
 📸 [Instagram](https://www.instagram.com/sajal_pakira?igsh=MXNkNHdvdnc3aDF3ZA==)
 
 ---
+
+## 🧪 API Endpoints Overview
+
+| Method | Endpoint                 | Description              |
+| ------ | ------------------------ | ------------------------ |
+| POST   | `/api/v1/auth/register`  | Register a new user 🆕   |
+| POST   | `/api/v1/auth/login`     | Login user 🔐            |
+| PUT    | `/api/v1/user/update`    | Update user profile ✏️   |
+| DELETE | `/api/v1/user/delete`    | Delete user account 🗑️  |
+| POST   | `/api/v1/job/create`     | Create a job post 🧾     |
+| GET    | `/api/v1/job/get`        | Get all jobs for user 📃 |
+| PATCH  | `/api/v1/job/update/:id` | Update job post 🔄       |
+| DELETE | `/api/v1/job/delete/:id` | Delete job post ❌        |
+| GET    | `/api/v1/job/stats`      | Get job stats 📊         |
+
 
 © 2025 Job Portal API - All rights reserved.
