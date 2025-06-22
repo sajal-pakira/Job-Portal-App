@@ -1,4 +1,6 @@
+// middleware imports
 import errorMiddleware from "./middlewares/error.middleware.js";
+import { sanitizeInput } from "./middlewares/sanitize.middleware.js";
 //package imports
 import dotenv from "dotenv";
 dotenv.config();
@@ -8,7 +10,6 @@ import morgan from "morgan";
 import "express-async-errors";
 // security packages
 import helmet from "helmet";
-import xss from "xss";
 import ExpressMongoSanitize from "express-mongo-sanitize";
 //files import
 import connectDB from "./config/db.js";
@@ -26,9 +27,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
-app.use(helmet(``));
-app.use(xss(``));
-app.use(ExpressMongoSanitize())
+app.use(helmet());
+app.use(sanitizeInput);
+
+app.use(ExpressMongoSanitize());
 
 //routes
 app.use("/api/v1/auth", authRoute);
