@@ -1,3 +1,14 @@
-node_modules
 
+node_modules/
 .env
+npm-debug.log*
+*.log
+
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+yarn-debug.log*
+yarn-error.log*
+debug.log
